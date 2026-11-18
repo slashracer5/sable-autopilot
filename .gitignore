@@ -1,0 +1,45 @@
+# --- OS / editor ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+*~
+*.swp
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Python (analysis scripts, if added) ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- local config and secrets (never commit) ---
+.env
+.env.*
+.mcp.json
+tokens.json
+.bridge.json
+.bridge*.log
+.bridge-debug
+
+# --- per-ship data pulled off an in-game computer ---
+# /ap_data holds this ship's airframe.json, tune, trim, flight.lock and logs
+ap_data/
+diag_*.csv
+tune.csv
+flight.lock
+*.log
+
+# --- release bundles and scratch space ---
+releases/
+*.zip
+scratch/
+tmp/
+
+# --- Claude Code local state ---
+.claude/settings.local.json
+scheduled_tasks.lock
+
+# NOTE: dist/apinstall.lua is committed on purpose (one-line install).
+# data/examples/ is committed on purpose (curated sample flight logs).
